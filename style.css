@@ -1,0 +1,143 @@
+body {
+    background-color: #121212; /* Dark background for better contrast */
+    color: #E0E0E0; /* Light gray text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: #E0E0E0;
+    border: 2px solid #333; /* Darker border for a subtle effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+    background-color: #1E1E1E; /* Slightly lighter background for contrast */
+}
+
+h1 {
+    color: #FFD700; /* Gold color for emphasis */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    margin: 0;
+    padding: 0;
+}
+
+.task-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #444; /* Slightly lighter gray border */
+    border-radius: 6px; /* Rounded corners */
+    margin-bottom: 20px;
+    background-color: #2A2A2A; /* Darker background for list items */
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+.task-list li:hover {
+    border-color: #555; /* Subtle change on hover */
+}
+
+.task-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F5DEB3; /* Wheat color for better visibility */
+}
+
+.task-due-date, .task-assigne {
+    font-size: 14px;
+    color: #B0B0B0; /* Light gray color */
+    margin-bottom: 5px;
+}
+
+.create-task {
+    margin-top: 20px;
+}
+
+.create-task input, .create-task select, .create-task textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #666; /* Gray border for form elements */
+    border-radius: 4px; /* Rounded corners */
+    width: calc(100% - 22px); /* Adjust width to fit padding and border */
+    background-color: #333; /* Darker background for form elements */
+    color: #E0E0E0; /* Light text color for input fields */
+}
+
+.create-task textarea {
+    height: 120px; /* Increased height for better readability */
+}
+
+.create-task input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #444; /* Darker button background */
+    color: #E0E0E0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for button hover effect */
+}
+
+.create-task input[type="submit"]:hover {
+    background-color: #666; /* Slightly lighter on hover */
+}
+
+.comment-list {
+    margin-top: 10px;
+}
+
+.comment {
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-bottom: 5px;
+}
+
+.completed-task-list {
+    margin-top: 30px;
+}
+
+.task-management {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #444; /* Lighter border for sections */
+    border-radius: 6px; /* Rounded corners */
+    margin-left: 10px;
+    background-color: #2A2A2A; /* Matching background color */
+}
+
+.left-section {
+    flex: 3;
+}
+
+.chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #333; /* Darker background for chat messages */
+    margin-bottom: 15px;
+    padding: 15px;
+    color: #E0E0E0;
+    border-radius: 6px; /* Rounded corners */
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444; /* Lighter border for chat messages */
+    padding-bottom: 5px;
+}
